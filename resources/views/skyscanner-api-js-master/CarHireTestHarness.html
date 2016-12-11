@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Car Hire Live Pricing API Test Harness</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="harness/harness.v2.carhire.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Car Hire Live Pricing API Test Harness</h1>
+    
+    <div id="wholeresult">
+            <fieldset>                <form name="query">
+            
+                    <div style="float:left;"> 
+                        <label for="apikey" id="apikey_label">Api Key</label>
+                        <input type="text" name="apikey" id="apikey" value="" class="query-input apikey" />
+                    </div>
+                    
+                    <div style="float:left">
+                        <label for="userip" id="userip_label">Your IP</label>
+                        <input type="text" name="userip" id="userip" value="127.0.0.1" class="query-input apikey" />
+                    </div>
+                    
+                    <div style="clear:both;">
+                        <div style="float:left;"><label for="pickupplace">Pickup Place</label><input class="query-input" type="text" id="pickupplace" value="LHR"/></div>
+                        <div style="float:left;"><label for="dropoffplace">Dropoff Place</label><input class="query-input" type="text" id="dropoffplace" value="LHR"/></div>
+                        <div style="float:left;"><label for="pickupdatetime">Pickup Date/Time</label><input class="query-input" type="text" id="pickupdatetime" value=""/></div>
+                        <div style="float:left;"><label for="dropoffdatetime">Dropoff Date/Time</label><input class="query-input" type="text" id="dropoffdatetime" value=""/></div>
+                
+                        <div style="float:left" class="market">
+                            <div style="float:left;"><label for="market">Market</label><input class="query-input" type="text" id="market" value="UK"/></div>
+                            <div style="float:left;"><label for="locale">Locale</label><input class="query-input" type="text" id="locale" value="en-GB"/></div>
+                            <div style="float:left;"><label for="currency">Currency</label><input class="query-input" type="text" id="currency" value="GBP"/></div>
+                        </div>
+                
+                        <div style="float:left">
+                            <label for="driverage">Driver's Age</label>
+                            <select id="driverage" style="width: 70px">
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
+                                <option value="51">51</option>
+                                <option value="52">52</option>
+                                <option value="53">53</option>
+                                <option value="54">54</option>
+                                <option value="55">55</option>
+                                <option value="56">56</option>
+                                <option value="57">57</option>
+                                <option value="58">58</option>
+                                <option value="59">59</option>
+                                <option value="60">60</option>
+                                <option value="61">61</option>
+                                <option value="62">62</option>
+                                <option value="63">63</option>
+                                <option value="64">64</option>
+                                <option value="65">65</option>
+                                <option value="66">66</option>
+                                <option value="67">67</option>
+                                <option value="68">68</option>
+                                <option value="69">69</option>
+                                <option value="70">70</option>
+                                <option value="71">71</option>
+                                <option value="72">72</option>
+                                <option value="73">73</option>
+                                <option value="74">74</option>
+                                <option value="75">75</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    
+                    <div style="clear:both;">
+                        <input type="submit" value="Find Car Hire" id="btn-call" class="button"/>
+                        <span id="hourglass"></span>
+                    </div>
+                    
+                    <div id="errors"></div>
+                    <div><table id="resultstable" style="border: 0"></table></div>
+                </form>
+            </fieldset>
+        </div>
+
+    <script src="core/skyscanner.api.v2.data.js" type="text/javascript"></script>
+</body>
+</html>

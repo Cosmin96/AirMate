@@ -1,0 +1,200 @@
+﻿/*
+Copyright 2015 Skyscanner
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+body 
+{
+	font-family: arial,"Bitstream Vera Sans",Helvetica,Verdana,sans-serif;
+	font-size: 14px;
+}
+
+label 
+{
+	display: block;
+	line-height:1.8em;
+	font-size: 14px;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+                      	
+form 
+{
+	border: 1px solid #DFDFDF;
+	width: 100%;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}    
+
+fieldset 
+{
+    border: none;
+}                         	
+                      	
+input.query-input, select
+{
+   width: 160px;
+   height: 20px;
+   margin-right: 30px;
+   margin-bottom: 10px;
+   margin-left: 30px;
+   padding: 0;
+}
+
+input.apikey
+{
+   width: 220px;
+}
+
+div#wholeresult
+{
+	margin: 10px 10px;
+}
+
+div.market
+{
+	padding-left: 20px;
+	padding-right: 10px;
+	margin-right: 33px;
+}
+
+div.market input
+{
+	width:50px;
+	margin-left:10px;
+	margin-right: 0px;
+}
+
+div.market label
+{
+	margin-left:10px;
+	margin-right: 0px;
+}
+
+div.passengers input
+{
+	width:30px;
+	margin-left:10px;
+	margin-right: 10px;
+}
+
+div.passengers label
+{
+	margin-left:10px;
+	margin-right: 10px;
+}
+
+div.debug label, input
+{
+	display:inline-block;
+}
+
+div.debug input
+{
+   width:20px;
+   margin-left:0px;   
+   margin-right:0px;
+}
+
+input.button
+{
+	 margin-right: 30px;
+	 margin-left: 30px;
+	 margin-bottom: 10px;
+	 width: 160px;
+}
+
+div.createinfo {	
+	margin-top: 10px;
+	margin-bottom:10px
+}
+
+.ajax-loader {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;     
+}
+
+table 
+{
+	border: 1px solid #DFDFDF;
+	width: 100%;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin-top: 20px;
+}
+
+table td 
+{
+	border-top-color: white;
+	border-bottom: 1px solid #DFDFDF;
+	color: #555;
+}
+
+table th
+{
+	text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;
+	font-weight: normal;
+	padding: 7px 7px 8px 7px;
+	text-align: left;
+	line-height: 1.3em;
+	font-size: 14px;
+	border-bottom: 1px solid #DFDFDF;
+	color: black;
+}
+
+table td 
+{
+	font-size: 12px;
+	padding: 4px 7px 2px 7px;
+	vertical-align: top;
+}
+
+.infoheader
+{
+    border-top-color: white;
+	text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;
+	font-weight: normal;
+	padding: 0px 7px 0px 7px;
+	text-align: left;
+	line-height: 1.3em;
+	font-size: 14px;
+    color: black;
+}    
+
+.infodata
+{
+    border-top-color: white;
+	color: #555;
+	font-size: 12px;
+	padding: 1px 0 0 30px;
+	vertical-align: top;
+}  
+
+#info_div_pricing
+{
+    height: 240px;
+}  
+
+#info_div_browse
+{
+    height: 120px;
+} 
+
+#bookingdetails_div, .pollbooking_btn
+{
+    margin: 5px 300px;
+}  
+                     	
