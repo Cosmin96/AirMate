@@ -7,7 +7,7 @@
   <meta name="generator" content="Mobirise v3.10, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{ asset('landing-assets/images/logo-314x128-90.png') }}" type="image/x-icon">
-
+<meta name="csrf-token" content="{{ csrf_token() }}">
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
@@ -21,10 +21,19 @@
   <link rel="stylesheet" href="{{ asset('landing-assets/theme/css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('landing-assets/mobirise/css/mbr-additional.css') }}" type="text/css">
   
-  
+  <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>
+    </script>
   
 </head>
 <body>
+
+  <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                        </form>
 <section id="menu-1">
 
     <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
@@ -45,7 +54,10 @@
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item dropdown"><a class="nav-link link" href="https://mobirise.com/" aria-expanded="false"></a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white-outline btn-white" href="https://mobirise.com/"><span style="font-size: 19.200000762939453px; font-weight: normal; line-height: 9.600000381469727px;">Logout</span></font></a></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
+                      <li class="nav-item dropdown"><a class="nav-link link" href="#" aria-expanded="false"></a></li>
+                      <li class="nav-item nav-btn"><a class="nav-link btn btn-white-outline btn-white" href="{{ url('/logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><span style="font-size: 19.200000762939453px; font-weight: normal; line-height: 9.600000381469727px;">Logout</span></font></a></li></ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
@@ -68,7 +80,7 @@
             <div class="row">
                 <div class="mbr-section col-md-10 col-md-offset-1 text-xs-center">
 
-                    <h1 class="mbr-section-title display-1">Welcome, !</h1>
+                    <h1 class="mbr-section-title display-1">Welcome, {{ Auth::user()->name }}!</h1>
                     <p class="mbr-section-lead lead">Please search your airport and flight details in the form below</p>
                     
                 </div>
