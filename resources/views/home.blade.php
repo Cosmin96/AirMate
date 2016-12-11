@@ -96,7 +96,85 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 lead"><p>Make your own website in a few clicks! Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface. MobiRise Website Builder creates responsive, retina and mobile friendly websites in a few clicks. Mobirise is one of the easiest website development tools <a href="http://google.com/">available</a> today. It also gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.</p></div>
+          <form class="form-horizontal form-label-left">
+            <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Departure</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <select class="form-control">
+                            <option>Choose option</option>
+                            <option>London Heathrow</option>
+                            <option>London Gatwick</option>
+                            <option>London Stansted</option>
+                            <option>London Luton</option>
+                            <option>Manchester MAN</option>
+                            <option>Edinburgh</option>
+                            <option>Paris Charles de Gaulle</option>
+                            <option>Paris Orly</option>
+                            <option>Munchen</option>
+                            <option>Amsterdam</option>
+                            <option>Rotterdam</option>
+                            <option>Berlin Schonefeld</option>
+                            <option>Berlin Tegel</option>
+                            <option>Los Angeles LAX</option>
+                            <option>New York JFK</option>
+                            <option>Barcelona</option>
+                            <option>Madrid</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Destination</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <select class="form-control">
+                            <option>Choose option</option>
+                            <option>London Heathrow</option>
+                            <option>London Gatwick</option>
+                            <option>London Stansted</option>
+                            <option>London Luton</option>
+                            <option>Edinburgh</option>
+                            <option>Paris Charles de Gaulle</option>
+                            <option>Paris Orly</option>
+                            <option>Munchen</option>
+                            <option>Amsterdam</option>
+                            <option>Rotterdam</option>
+                            <option>Berlin Schonefeld</option>
+                            <option>Berlin Tegel</option>
+                            <option>Los Angeles LAX</option>
+                            <option>New York JFK</option>
+                            <option>Barcelona</option>
+                            <option>Madrid</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                     
+
+                      <div class="control-group">
+                       
+                        <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Flight Number</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                          <input type="text" class="form-control" placeholder="Default Input">
+                        </div>
+                      </div>
+                      </div>
+                     
+                      </div>
+
+                      
+                      
+
+
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                          
+                          <button type="submit" class="btn btn-success">Apply</button>
+                        </div>
+                      </div>
+
+                    </form>
+            
         </div>
     </div>
 
